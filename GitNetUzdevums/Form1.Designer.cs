@@ -32,8 +32,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxRViksna = new System.Windows.Forms.GroupBox();
+            this.buttonRViksna = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBoxRViksna.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -68,24 +71,46 @@
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 21);
+            this.groupBox1.Location = new System.Drawing.Point(160, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 53);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Andrejs Liepiņš";
             // 
+            // groupBoxRViksna
+            // 
+            this.groupBoxRViksna.Controls.Add(this.buttonRViksna);
+            this.groupBoxRViksna.Location = new System.Drawing.Point(160, 93);
+            this.groupBoxRViksna.Name = "groupBoxRViksna";
+            this.groupBoxRViksna.Size = new System.Drawing.Size(200, 100);
+            this.groupBoxRViksna.TabIndex = 4;
+            this.groupBoxRViksna.TabStop = false;
+            this.groupBoxRViksna.Text = "groupBoxRVIksna";
+            // 
+            // buttonRViksna
+            // 
+            this.buttonRViksna.Location = new System.Drawing.Point(23, 36);
+            this.buttonRViksna.Name = "buttonRViksna";
+            this.buttonRViksna.Size = new System.Drawing.Size(75, 23);
+            this.buttonRViksna.TabIndex = 0;
+            this.buttonRViksna.Text = "Y=1";
+            this.buttonRViksna.UseVisualStyleBackColor = true;
+            this.buttonRViksna.Click += new System.EventHandler(this.buttonRViksna_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 415);
+            this.Controls.Add(this.groupBoxRViksna);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Funkciju grafiki";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBoxRViksna.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -96,6 +121,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxRViksna;
+        private System.Windows.Forms.Button buttonRViksna;
     }
 }
 
